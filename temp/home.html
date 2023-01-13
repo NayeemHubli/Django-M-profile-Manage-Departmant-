@@ -1,0 +1,265 @@
+{% load static %}
+<img class="back" src="{% static 'assets/images/homee.jpg' %}">
+<form>
+
+{% csrf_token %}
+<div class="card-container">
+  <a href="login">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      logout
+    </a>
+  <span class="pro">SLOT</span>
+  <span class="pro1">RG21</span><br><br>
+  <div  class="card-container">
+  <img class="round" src="{% static 'profile.png' %}" alt="user" />
+  <h3>{{name}}</h3>
+  <h6>{{city}}</h6>
+  <p>
+    Hi, {{name}} here. I am from {{city}} and am very passionate about {{hobby}}. {{hobby}} makes me feel independent
+    and excites all the time. I have completed my {{edu}} and have plans of becoming an {{aim}}. One day I see myself as a {{aim}}.
+</p>
+  <div class="buttons"> 
+  </div>
+  <div class="skills">
+    <h6>Tech Skills</h6><br>
+    <ul>
+      <li>C</li>
+      <li>Java</li>
+      <li>Python</li>
+      <li>Front End Development</li>
+      <li>Back End Development</li>
+      <li>Django Framework</li>
+      <li>SQL&Lite</li>
+      <li>Web Design</li>
+      <li>JavaScript</li>
+      
+    </ul>
+  </div>
+</div>
+</div>
+
+<footer>
+  <p>
+    MCA DEPARTMENT <i class="fa fa-heart"></i> |
+    <a target="_blank" href="https://www.suranacollege.edu.in/pg-courses/"> SURANA COLLEGE </a>
+  </p>
+</footer>
+</form>
+
+<style type="text/css">
+  @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  box-sizing: border-box;
+
+}
+.back
+  {
+position: fixed;
+top: 0;
+width: 100%;
+height: 100%;
+background-size: cover;
+}
+
+body {
+  background-color: black;
+  font-family: Montserrat, sans-serif;
+  background: rgba(0,0,0,.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 25px;
+  margin: 10px 0;
+}
+
+h6 {
+  font-weight: bold;
+  font-size: 13px;
+  margin: 5px 0;
+  text-transform: uppercase;
+}
+
+p {
+  font-weight: 540;
+  font-size: 19px;
+  line-height: 24px;
+}
+
+.card-container {
+
+  background-color: #000000;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+  color: #B3B8CD;
+  padding-top: 30px;
+  position: relative;
+  width: 600px;
+  max-width: 100%;
+  text-align: center;
+}
+.card-container .pro1 {
+  font-weight: bold;
+  padding: 3px 7px;
+  position: absolute;
+  top: 45px;
+  left: 30px;
+}
+
+.card-container .pro {
+  font-weight: bold;
+  padding: 3px 7px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.card-container .round {
+  image-rendering:;
+  border: 3px dotted whitesmoke ;
+  border-radius: 100%;
+  padding: 3px;
+}
+
+button.primary {
+  background-color: #03BFCB;
+  border: 1px solid #03BFCB;
+  border-radius: 3px;
+  color: #231E39;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  padding: 10px 25px;
+}
+
+button.primary.ghost {
+  background-color: transparent;
+  color: #02899C;
+}
+
+.skills {
+  background-color: #161616;
+  text-align: left;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+.skills ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skills ul li {
+  font-weight: 540;
+  border: 1px solid #2D2747;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 15px;
+  margin: 0 7px 7px 0;
+  padding: 7px;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999;
+}
+
+footer p {
+    margin: 0px 0;
+}
+
+footer i {
+    color: red;
+}
+
+footer a {
+    color: #3c97bf;
+    text-decoration: none;
+}
+
+.card-container  a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 10px;
+  background-color: black;
+  border-radius: 6px;
+  color: whitesmoke;
+  font-size: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-left: 450px;
+  margin-top: 0px;
+  letter-spacing: 1px
+}
+
+.card-container a:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+
+
+.card-container a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.card-container a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+
+</style>

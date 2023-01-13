@@ -1,0 +1,579 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>Django_mini_project</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-grad-school.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/lightbox.css' %}">
+<!--
+    
+TemplateMo 557 Grad School
+
+https://templatemo.com/tm-557-grad-school
+
+-->
+  </head>
+
+<body>
+
+   
+  <!--header-->
+  <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="#"><em>Surana</em> College</a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a href="#section1">Home</a></li>
+        <li class="has-submenu"><a href="#section2">About Us</a>
+          <ul class="sub-menu">
+            <li><a href="#section2">Who we are?</a></li>
+            <li><a href="https://www.suranacollege.edu.in/pg-courses/" rel="sponsored" class="external">More</a></li>
+          </ul>
+        </li>
+        <li><a href="#section4">Courses</a></li>
+        <!-- <li><a href="#section5">Video</a></li> -->
+        <li><a href="#section6">Contact</a></li>
+        <li><a href="login" class="external">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <section class="section main-banner" id="top" data-section="section1">
+      <video autoplay muted loop id="bg-video">
+          <source src="{% static 'assets/images/course-video.mp4' %}" type="video/mp4" />
+      </video>
+
+      <div class="video-overlay header-text">
+          <div class="caption">
+              <h6>Post Graduate Department of Surana</h6>
+              <h2><em>MCA</em> Department</h2>
+              <div class="main-button">
+                  <div class="scroll-to-section"><a href="#section2">Discover more</a></div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- ***** Main Banner Area End ***** -->
+
+
+  <section class="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-12">
+          <div class="features-post">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-pencil"></i>All Courses</h4>
+              </div>
+              <div class="content-hide">
+                <p>Master Of Computer Application[MCA]
+                   Master Of Business Application[MBA]
+                   Master Of Science[MSC]</p>
+                
+                <div class="scroll-to-section"><a href="#section2">More Info.</a></div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12">
+          <div class="features-post second-features">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-graduation-cap"></i>Eligibility</h4>
+              </div>
+              <div class="content-hide">
+                <p>The candidates applying for government quota must appear for PGCET conducted by the Government of Karnataka. The candidates applying under management quota shall appear for College level entrance test or National Level Entrance test or Karnataka K-MAT test.
+                <div class="scroll-to-section"><a href="#section3">Details</a></div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12">
+          <div class="features-post third-features">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-book"></i>Vision & Mission</h4>
+              </div>
+              <div class="content-hide">
+                <p>Vision : “To give quality individuals to the society as useful resource in nation building and empowering young minds to the changing needs.”
+                   Mission : “To provide quality, integral, professional and career oriented education and create an environment for educational excellence”
+                <div class="scroll-to-section"><a href="#section4">Read More</a></div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section why-us" data-section="section2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Why choose Surana Educational Institution's?</h2>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div id='tabs'>
+            <ul>
+              <li><a href='#tabs-1'>Best Education</a></li>
+              <li><a href='#tabs-2'>Top Management</a></li>
+              <li><a href='#tabs-3'>Quality Meeting</a></li>
+            </ul>
+            <section class='tabs-content'>
+              <article id='tabs-1'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="{% static 'assets/images/choose-us-image-01.png' %}" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Best Education</h4>
+                    <p>[Accredited by NAAC with ‘A+’ Grade, ISO 9001:2015 & IAO Certified Institution, Affiliated to Bangalore University & approved by AICTE.]
+                    The department of MCA was established in the year 2000. MCA is offered as a two-year program with a current intake of 60. The course is intended to produce qualified professionals well-equipped with the necessary skills and knowledge to meet the growing demand in Computer Science and Applications.</p>
+                  </div>
+                </div>
+              </article>
+              <article id='tabs-2'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="{% static 'assets/images/choose-us-image-02.png' %}" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Top Level</h4>
+                    <p>The course emphasizes programming languages, web technologies, software testing, software engineering and application development requisites to fulfill the IT requirements. In contrast, the essence of basic mathematics, statistical concepts, and computer fundamentals provide a vital foundation. Introducing practical teaching aids to enhance every aspirant’s ability to identify, analyze, and solve a problem through computation has been the primary objective of this course.</p>
+                  </div>
+                </div>
+              </article>
+              <article id='tabs-3'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="{% static 'assets/images/choose-us-image-03.png' %}" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Quality Meeting</h4>
+                    <p>In addition, the department offers various cutting-edge technologies as add-on courses and personality development workshops from industry experts to the student community. The MCA program has been designed to give equal stress on theoretical and practical learning in applied computer science. It is envisioned to deliver an updated industry-oriented education to meet the expectations of the leading corporations of Silicon Valley. </p>
+                  </div>
+                </div>
+              </article>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section coming-soon" data-section="section3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-xs-12">
+          <div class="continer centerIt">
+            <div>
+              <h4><em>CERTIFICATETION PROGRAMS</em> </h4>
+              <div class="counter">
+              <h4>“The difference between good and great is just a little extra effort.”</h4>
+              <div class="font_color">
+                <h2><em>The department of MCA offers Value added certificate programs as an additional skill development. These programs offer studentsan edge in the extremely competitive IT industry. Here, the students get introduced to the latest trends and technologieswith a hands-on experience in most of them.</em></h2>
+                <br><h2>Python and Data Visualization</h2>
+                <h2>Machine Learning</h2>
+                <h2>DOTNET</h2>
+                <h2>RPA (Robotics Process Automation)</h2>
+                <h2>AWS (Amazon web service)</h2>
+                <h2>PHP and MySQL</h2>
+                <h2>Django</h2>
+              </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="right-content">
+            <div class="top-content">
+              <h6>Register your free account and <em>get immediate</em> Addmission Slot Booked</h6>
+            </div>
+            <form id="contact" action="Register_page" method="POST" onsubmit="return verifyPassword()">
+              {% csrf_token %}
+              <div class="row">
+                <div class="col-md-12">
+                  <fieldset>
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <input name="phone-number" type="text" class="form-control" id="phone-number" placeholder="Your Phone Number" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <input name="password" type="password" class="form-control" id="password" placeholder="Password" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <input name="Cpassword" type="text" class="form-control" id="Cpassword" placeholder="Conform Password" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <input name="city" type="text" class="form-control" id="city" placeholder="Your City" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <input name="qualification" type="text" class="form-control" id="qualification" placeholder="Your Highest Qualification" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <input name="ambitions" type="text" class="form-control" id="ambitions" placeholder="Your Ambitions/Aim" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <input name="hobbies" type="text" class="form-control" id="hobbies" placeholder="Your Hobbies" required="">
+                  </fieldset>
+                </div>
+               
+                <div class="col-md-12">
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="button" value="Submit">Submit</button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section courses" data-section="section4">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Subject And Lecture's Details</h2>
+          </div>
+        </div>
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <img src="{% static 'assets/images/courses-01.jpg' %}" alt="Course #1">
+            <div class="down-content">
+              <h4>Theory of Computation</h4>
+              <p>Theory of computation (TOC) is a branch of Computer Science that is concerned with how problems can be solved using algorithms and how efficiently they can be solved. Real-world computers perform computations that by nature run like mathematical models to solve problems in systematic ways.</p>
+              <div class="author-image">
+                <img src="{% static 'assets/images/author-01.png' %}" alt="Author 1">
+              </div>
+              <div class="text-button-pay">
+                <a href="#">Details <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="{% static 'assets/images/courses-02.jpg' %}" alt="Course #2">
+            <div class="down-content">
+              <h4>The Art of Programming</h4>
+              <p>Computer programming is the process of writing instructions that get executed by computers. The instructions, also known as code, are written in a programming language which the computer can understand and use to perform a task or solve a problem</p>
+              <div class="author-image">
+                <img src="{% static 'assets/images/author-02.png' %}" alt="Author 2">
+              </div>
+              <div class="text-button-free">
+                <a href="#">Details <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="{% static 'assets/images/courses-03.jpg' %}" alt="Course #3">
+            <div class="down-content">
+              <h4>Computer Organization and Architecture</h4>
+              <p>Computer Organization and Architecture Tutorial provides in-depth knowledge of internal working, structuring, and implementation of a computer system. Whereas, Organization defines the way the system is structured so that all those catalogued tools can be used properly.</p>
+              <div class="author-image">
+                <img src="{% static 'assets/images/author-03.png' %}" alt="Author 3">
+              </div>
+              <div class="text-button-pay">
+                <a href="#">Details<i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="{% static 'assets/images/courses-04.jpg' %}" alt="Course #4">
+            <div class="down-content">
+              <h4>Object Oriented Programming</h4>
+              <p>Object-oriented programming (OOP) is a computer programming model that organizes software design around data, or objects, rather than functions and logic. An object can be defined as a data field that has unique attributes and behavior.</p>
+              <div class="author-image">
+                <img src="{% static 'assets/images/author-04.png' %}" alt="Author 4">
+              </div>
+              <div class="text-button-free">
+                <a href="#">Details<i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="{% static 'assets/images/courses-05.jpg' %}" alt="">
+            <div class="down-content">
+              <h4>Data Structures</h4>
+              <p>A data structure is a specialized format for organizing, processing, retrieving and storing data. There are several basic and advanced types of data structures, all designed to arrange data to suit a specific purpose. Data structures make it easy for users to access and work with the data they need in appropriate ways.</p>
+              <div class="author-image">
+                <img src="{% static 'assets/images/author-05.png' %}" alt="">
+              </div>
+              <div class="text-button-pay">
+                <a href="#">Details<i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="{% static 'assets/images/courses-01.jpg' %}" alt="">
+            <div class="down-content">
+              <h4>Operating Systems</h4>
+              <p>An operating system (OS) is the program that, after being initially loaded into the computer by a boot program, manages all of the other application programs in a computer. The application programs make use of the operating system by making requests for services through a defined application program interface (API).</p>
+              <div class="author-image">
+                <img src="{% static 'assets/images/author-01.png' %}" alt="">
+              </div>
+              <div class="text-button-free">
+                <a href="#">Details<i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="{% static 'assets/images/courses-02.jpg' %}" alt="">
+            <div class="down-content">
+              <h4>Web Development</h4>
+              <p> Web development refers in general to the tasks associated with developing websites for hosting via intranet or internet. The web development process includes web design, web content development, client-side/server-side scripting and network security configuration, among other tasks.</p>
+              <div class="author-image">
+                <img src="{% static 'assets/images/author-02.png' %}" alt="">
+              </div>
+              <div class="text-button-free">
+                <a href="#">Details<i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="{% static 'assets/images/courses-03.jpg' %}" alt="">
+            <div class="down-content">
+              <h4>Database Management Systems</h4>
+              <p>A database management system (or DBMS) is essentially nothing more than a computerized data-keeping system. Users of the system are given facilities to perform several kinds of operations on such a system for either manipulation of the data in the database or the management of the database structure itself.</p>
+              <div class="author-image">
+                <img src="{% static 'assets/images/author-03.png' %}" alt="">
+              </div>
+              <div class="text-button-pay">
+                <a href="#">Details<i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="{% static 'assets/images/courses-04.jpg' %}" alt="">
+            <div class="down-content">
+              <h4>Computer Networks</h4>
+              <p>Computer networking refers to interconnected computing devices that can exchange data and share resources with each other. These networked devices use a system of rules, called communications protocols, to transmit information over physical or wireless technologies.</p>
+              <div class="author-image">
+                <img src="{% static 'assets/images/author-04.png' %}" alt="">
+              </div>
+              <div class="text-button-pay">
+                <a href="#">Details<i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="{% static 'assets/images/courses-05.jpg' %}" alt="">
+            <div class="down-content">
+              <h4>Software Engineering</h4>
+              <p> Software engineering is a detailed study of engineering to the design, development and maintenance of software. Software engineering was introduced to address the issues of low-quality software projects.</p>
+              <div class="author-image">
+                <img src="{% static 'assets/images/author-05.png' %}" alt="">
+              </div>
+              <div class="text-button-free">
+                <a href="#">Details<i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="{% static 'assets/images/courses-01.jpg' %}" alt="">
+            <div class="down-content">
+              <h4>Artificial Intelligence</h4>
+              <p>Artificial intelligence is the simulation of human intelligence processes by machines, especially computer systems. Specific applications of AI include expert systems, natural language processing, speech recognition and machine vision.</p>
+              <div class="author-image">
+                <img src="{% static 'assets/images/author-01.png' %}" alt="">
+              </div>
+              <div class="text-button-pay">
+                <a href="#">Details<i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="section video" data-section="section5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 align-self-center">
+          <div class="left-content">
+            <span>“Practice for Perfection”</span>
+            <h4> THE IT CLUB <em>SADHANA</em></h4>
+            <p>The Concept of Sadhana was inducted into the MCA Department by its Soul Heir Dr. A Srinivas in the academic year 2005-2006.<br>
+“Practice makes man perfect” is an old saying and this word is a new world order and for that we have changed the quote as “Practice for Perfection”,which is the caption for our IT club called SADHANA. Sadhana is a weekly event conducted by the students,for the students to improve their soft skills and to practice certain skills needed for their survival in the software industry.
+            </p>
+            <div class="main-button"><a rel="nofollow" href="https://www.suranacollege.edu.in/pg-courses/sadhana-it-club.html" target="_parent">Know More</a></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <article class="video-item">
+            <div class="video-caption">
+              <h4>Gallery</h4>
+            </div>
+            <figure>
+              <a href="https://youtu.be/xhRgyfpkz_o" class="play"><img src="{% static 'assets/images/main-thumb.png' %}"></a>
+            </figure>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" data-section="section6">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Let’s Keep In Touch</h2>
+          </div>
+        </div>
+        <div class="col-md-6">
+        
+        <!-- Do you need a working HTML contact-form script?
+                	
+                    Please visit https://templatemo.com/contact page -->
+                    
+          <form id="contact" action="" method="post">
+            <div class="row">
+              <div class="col-md-6">
+                  <fieldset>
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-6">
+                  <fieldset>
+                    <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="">
+                  </fieldset>
+                </div>
+              <div class="col-md-12">
+                <fieldset>
+                  <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+                </fieldset>
+              </div>
+              <div class="col-md-12">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="button">Send Message Now</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+       
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p><i class="fa fa-copyright"></i> Copyright 2022 by Surana Educational Institutional 
+          
+           | Design: <a href="#" rel="sponsored" target="_parent">Nayeem</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'vendor/jquery/varifypass.js' %}"></script>
+    <script src="{% static 'assets/js/isotope.min.js' %}"></script>
+    <script src="{% static 'assets/js/owl-carousel.js' %}"></script>
+    <script src="{% static 'assets/js/lightbox.js' %}"></script>
+    <script src="{% static 'assets/js/tabs.js' %}"></script>
+    <script src="{% static 'assets/js/video.js' %}"></script>
+    <script src="{% static 'assets/js/slick-slider.js' %}"></script>
+    <script src="{% static 'assets/js/custom.js' %}"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
+          if($(e.target).hasClass('external')) {
+            return;
+          }
+          e.preventDefault();
+          $('#menu').removeClass('active');
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+
+        
+    </script>
+</body>
+</html>
